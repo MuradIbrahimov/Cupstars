@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Vai&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --bgcolor:#fef8f5;
+    --TextColorBrown:#4e4039;
+    --FontSizeXL:48px;
+    --FontSizeL:34px;
+    --FontWeightXL:700;
+ --LineHeightXL:56px;
+ --TextColorLightBrown:#a08f86;
+ --FontSizeM:24px;
+ --FontSizeP:15px;
+ --ColorP:#5a6570;
+ --ColorIcon:#357050;
+ 
+ --BodyFontFamily:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+header{
+    z-index: 1;
+}
+body{
+    font-family:"Raleway", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    
+        font-family: "Raleway", sans-serif;
+    
+}
+
+.logo-header{
+    font-size: 30px;
+    margin: 0;
+    
+    font-weight: 400;
+    letter-spacing: 2px;
+color:#7a6960;
+font-family: var(--BodyFontFamily);
+}
+.btn-orange:hover{
+    background: #357050;
+opacity:0.7;
+}
+.btn-orange{
+    background: #357050;
+}
+/*#55c211*/
+.MyNavbar{
+    column-gap:20px;
+}
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #357050;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+nav  ul li:hover::after{
+    width: 100%;
+}
+#Banner{
+height:70vh;
+background: var(--bgcolor);
+border-bottom: 1px solid #fff3cd;
+}
+.BannerPic{
+    width: 25%;
+    height:100%;
+    animation:10s UpDown linear infinite;
+}
+#Banner .Banner-text h2 {
+
+    font-size:var(--FontSizeXL);
+    font-weight:var(--FontWeightXL);
+    line-height:var(--LineHeightXL);
+    color:var(--TextColorBrown);
+}
+#Banner .Banner-text p {
+  margin-top:15px;
+    color:var(--TextColorLightBrown);
+    font-size:var(--FontSizeM);
+}
+@keyframes UpDown {
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+#Team .TeamText{
+
+    padding:4px;
+}
+#Team .TeamText h3{
+    color:var(--TextColorBrown);
+    font-weight: var(--FontWeightXL);
+    font-size:var(--FontSizeL)
+}
+iconify-icon{
+font-size:48px;
+color:var(--ColorIcon)
+}
+#Team .TeamText p{
+    color:var(--ColorP);
+
+    font-size:var(--FontSizeP)
+}
+#Team .TeamText h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+    color: #7a6960;
+}
+#Team .SecondPic{
+
+    height:100%;
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+}
+#Stats{
+    padding :60px 0px;
+    background: var(--bgcolor);
+}
+#Stats .main p{
+    font-weight:var(--FontWeightXL);
+    font-size:var(--FontSizeL);
+    color:var(--TextColorBrown)
+}
+#Stats h2{
+font-size:var(--FontSizeM);
+color:#c2b7b1;
+font-weight: 700;
+}
+#Stats .paragraph {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #eb5d1e;
+    bottom: 27px;
+    left: calc(50% - 30px);
+}
+.card , .player{
+    padding:2px 0px 0px 0px;
+    border-radius: 15px;
+    border:none;
+}
+.card:hover {
+    transition-duration: 0.5s;
+    transform: translateY(-8px) ;
+    border-bottom: 3px solid orange;
+}
+.card a{
+text-decoration: none;
+color:#111;
+font-weight: 700;    
+font-size: 18px;
+
+}
+.card p{
+margin-top: 16px;
+font-size:15px;
+    
+    }
+
+    #WorldStars{
+        padding :60px 0px;
+        background: var(#ffffff);
+    }
+    #WorldStars  p{
+        font-weight:var(--FontWeightXL);
+        font-size:var(--FontSizeL);
+        color:var(--TextColorBrown)
+    }
+    #WorldStars h2{
+    font-size:var(--FontSizeM);
+    color:#c2b7b1;
+    font-weight: 700;
+    }
+    #WorldStars .paragraph {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 60px;
+        height: 2px;
+        background: #eb5d1e;
+        bottom: 27px;
+        left: calc(50% - 30px);
+    }
+    .player{
+        box-sizing: border-box;
+    }
+.player-body  {
+    position:relative;
+    height: 400px;
+    border-radius:15px;
+    overflow: hidden;
+    
+}
+.player-body img{
+    height:400px;
+
+}
+.player-body .overlay {
+    background: transparent;
+    width:100%;
+    height:100%;
+    background-color: #0d53eaa2;
+    position:absolute;
+    top:0px;
+    left:-500px;
+    transition:0.5s;
+    opacity:0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.player-body .overlay iconify-icon{
+transform: translateX(30px);
+color:#eb5d1e;
+display:inline;
+width: 50px;
+height:48px;
+}
+.overlay-right span{
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+}
+.player-body:hover .overlay{
+    opacity:100%;
+    transition: 0.5s;
+    left:0px;
+}
+.player-body .overlay:hover::after{
+    opacity:100%;
+    
+}
+.overlay-right{
+    background: transparent;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0px;
+    left:500px;
+    transition:0.5s;
+    opacity:0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.overlay-right div{
+    display:inline-block;
+    padding:5px 2px;
+    background-color: #eb5d1e;
+    color:white;
+    border-radius:5px;
+    width:40px;
+
+
+}
+
+.player-body:hover .overlay-right{
+    opacity:100%;
+    transition: 0.5s;
+    left:66%;
+}
+.player-body .overlay-right:hover::after{
+    opacity:100%;
+    
+}
+/*  #0d53eaa2 */
+#Contact{
+    background-color: var(--bgcolor);
+    height:900px;
+    padding:60px 0px;
+}
+.contactMeCols{
+    column-gap:0px;
+}
+#Contact h2{
+    display: inline-block;
+  
+    font-size:var(--FontSizeM);
+    color:#c2b7b1;
+    font-weight: 700;
+}
+
+.con-me iconify-icon{
+    position:absolute;
+}
+#Contact h4{
+    font-size:var(--FontSizeM);
+    margin:0px;
+}
+.con-me::before{
+    content: '';
+    width:100%;
+    height: 2px;
+    background: #357050;
+    display: block;
+    margin: auto;
+  
+}
+.con-me::after{
+    content: '';
+    width:100%;
+    height: 2px;
+    background: #357050;
+    display: block;
+    margin: auto;
+}
+
+form{
+    font-family: var(--BodyFontFamily);
+    font-size:16px;
+}
+#Contact input{
+    font-size:14px;
+    border-radius: 5px;
+    padding: 0.375rem 0.75rem;
+    border:1px solid #111;
+    width: 250px;
+}
+
+#contactSubject input,textarea{
+    width: 100%;
+}
+@media screen and (max-width:1200px){
+    .BannerPic{
+    display:none;
+
+    }
+    .SecondPic{
+        display:none;
+      
+
+    }
+    #Banner{
+        max-height: 500px;
+    }
+.card {
+box-sizing: border-box;
+margin-bottom: 20px;
+}
+}
