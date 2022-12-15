@@ -107,7 +107,7 @@ border-bottom: 1px solid #fff3cd;
 }
 iconify-icon{
 font-size:48px;
-color:var(--ColorIcon)
+color:var(--ColorIcon);
 }
 #Team .TeamText p{
     color:var(--ColorP);
@@ -284,7 +284,7 @@ height:48px;
 /*  #0d53eaa2 */
 #Contact{
     background-color: var(--bgcolor);
-    height:900px;
+    min-height:900px;
     padding:60px 0px;
 }
 .contactMeCols{
@@ -297,9 +297,7 @@ height:48px;
     color:#c2b7b1;
     font-weight: 700;
 }
-.con-me {
-   
-}
+
 .con-me iconify-icon{
     position:absolute;
 }
@@ -359,6 +357,14 @@ opacity:0.7;
     color: #357050;
     position: relative;
     padding-bottom: 12px;}
+footer{
+
+    background-color: var(--bgcolor);
+}
+#footer p{
+display:inline-block;
+}
+
 @media screen and (max-width:1200px){
     .BannerPic{
     display:none;
